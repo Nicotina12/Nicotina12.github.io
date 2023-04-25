@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    margin:0;
+    padding: 0;
+}
+html{
+    /*deslizo */
+    scroll-behavior: smooth;
+}
+/*menu*/
+.contenido-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenido-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenido-header header .logo a{
+font-family: 'Righteous';
+font-size: 36px;
+color: #aa8d0d;
+text-decoration: none;
+}
+.contenido-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenido-header header nav ul li a{
+    text-align: none;
+    color: #ffff;
+    margin : 0 15px;
+    padding : 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenido-header header nav ul li a:hover{
+   color: #aa8d0d;
+}
+.nav-responsive{
+    background-color: #aa8d0d;
+    color : #ffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* INICIO */
+.inicio{
+    background:  linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.png);
+    background-size: cover;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 10px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 60px;
+}
+.inicio .contenido-banner img{
+    margin-top: 30px;
+    border: 10px solid #1e2326;
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 150%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 0px;
+    font-size: 32px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: #ffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ffff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 10px 5px;
+    font-size: 20px;
+    transition: .3s;
+
+}
+.inicio .contenido-banner .redes a:hover{
+   background-color: #aa8d0d; 
+}
+
+
+/*SOBRE MI*/
+.sobremi{
+    background-color: #1e2326;
+    color : #fff;
+    padding:50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.sobremi .contenido-seccion p span{
+    font-size: 30px;
+    color:#aa8d0d;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'righteous';
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color :#aa8d0d;
+    width: 130px;
+}
+.sobremi .fila .col .contenedor-intereses{
+ display: flex;
+ flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s; 
+    }
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #aa8d0d;
+    }
+    .sobremi .fila .col .contenedor-intereses .interes i{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .sobremi button{
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #fff;
+        width: fit-content;
+        display: block;
+        margin: 20px auto;
+        padding: 10px 22px;
+        font-size: 16px;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+    .sobremi button .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #aa8d0d;
+        z-index: -1;
+        transition: 1s;
+    }
+    .sobremi button:hover .overlay{
+        width: 100%;
+    }
+    /*curriculum*/
+    .curriculum{
+        background-color: #1e2326;
+        color : #fff;
+        padding: 150px;
+    }
+    .curriculum .contenido-seccion{
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .curriculum h2{
+        font-size: 48px;
+        font-family: 'Righteous';
+        text-align: center;
+        padding: 20px 0;
+    }
+.tabla1{
+    float: left;
+ 
+}
+.tabla2{
+    float: right;
+    
+}
+
+.tabla1 caption{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Vina Sans', cursive ;
+}
+.tabla1 th{
+   border-collapse: collapse;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    text-align: center;
+    background-color: #222;
+}
+.tabla1 td {
+    border: 1px solid #ccc; 
+    padding: 12px; 
+    text-align: left; 
+    vertical-align: top; 
+  }
+.tabla1 th:hover{
+    background-color: #aa8d0d;
+}
+.tabla2 caption{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Vina Sans', cursive ;
+}
+.tabla2 th{
+    border-collapse: collapse;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    text-align: center;
+    background-color: #222;
+}
+.tabla2 td {
+    border: 1px solid #ccc; 
+    padding: 12px; 
+    text-align: left; 
+    vertical-align: top; 
+  }
+.tabla2 th:hover{
+    background-color: #aa8d0d;
+}
