@@ -48,14 +48,6 @@ text-decoration: none;
 .contenido-header header nav ul li a:hover{
    color: #aa8d0d;
 }
-.nav-responsive{
-    background-color: #aa8d0d;
-    color : #ffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-}
 
 
 /* INICIO */
