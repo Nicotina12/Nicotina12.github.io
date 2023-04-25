@@ -212,29 +212,38 @@ text-decoration: none;
     }
     /*curriculum*/
     .curriculum{
+        background:  linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+        url(img/fondo.png);
+        background-size: cover;
+        height: 70vh;
+        color: #ffff;
+       
+        /*
         background-color: #1e2326;
-        color : #fff;
-        padding: 150px;
+        color : #fff;*/
+        padding: 50px 20px;
     }
     .curriculum .contenido-seccion{
-        max-width: 1100px;
+        max-width: 1500px;
         margin: auto;
-        display: flex;
         justify-content: space-between;
+        display: flex;
     }
-    .curriculum h2{
+.curriculum h2{
         font-size: 48px;
         font-family: 'Righteous';
         text-align: center;
-        padding: 20px 0;
+        padding: 180px 110px;
     }
 .tabla1{
-    float: left;
+    margin-left: 50px;
+    width: 50%;  
  
 }
+
 .tabla2{
-    float: right;
-    
+    margin-left: 50px;
+    width: 50%;    
 }
 
 .tabla1 caption{
@@ -242,6 +251,8 @@ text-decoration: none;
     font-weight: bold;
     text-align: center;
     font-family:'Vina Sans', cursive ;
+    padding: 50px 0;
+
 }
 .tabla1 th{
    border-collapse: collapse;
@@ -249,21 +260,27 @@ text-decoration: none;
     border: 1px solid #fff;
     text-align: center;
     background-color: #222;
+    height: 30px;
 }
 .tabla1 td {
     border: 1px solid #ccc; 
     padding: 12px; 
-    text-align: left; 
+    text-align: center; 
     vertical-align: top; 
+    height: 30px;
   }
 .tabla1 th:hover{
     background-color: #aa8d0d;
+}
+.tabla1 td:hover{
+    background-color: #252A2E;
 }
 .tabla2 caption{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     font-family:'Vina Sans', cursive ;
+    padding: 50px 0;
 }
 .tabla2 th{
     border-collapse: collapse;
@@ -271,13 +288,78 @@ text-decoration: none;
     border: 1px solid #fff;
     text-align: center;
     background-color: #222;
+    height: 20px;
 }
 .tabla2 td {
     border: 1px solid #ccc; 
     padding: 12px; 
-    text-align: left; 
+    text-align: center; 
     vertical-align: top; 
+    height: 30px;
   }
 .tabla2 th:hover{
     background-color: #aa8d0d;
+}
+.tabla2 td:hover{
+    background-color: #252A2E;
+}
+/* CONTACTO */
+.contacto{
+    background-color: #1e2326;
+    color : #fff;
+    padding:50px 20px;
+}
+.contacto .contenido-seccion{
+    max-width: 1100%;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 100%;
+    padding: 100px;
+    position: static;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #aa8d0d;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
 }
