@@ -232,18 +232,24 @@ text-decoration: none;
 .curriculum h2{
         font-size: 48px;
         font-family: 'Righteous';
-        text-align: center;
         padding: 180px 110px;
+      position: relative;
+      left: -200px;
     }
 .tabla1{
     margin-left: 50px;
     width: 50%;  
+    position: relative;
+    left: -200px;
  
 }
 
 .tabla2{
     margin-left: 50px;
     width: 50%;    
+    position: relative;
+    left: -200px;
+ 
 }
 
 .tabla1 caption{
@@ -251,7 +257,7 @@ text-decoration: none;
     font-weight: bold;
     text-align: center;
     font-family:'Vina Sans', cursive ;
-    padding: 50px 0;
+    padding: 15px 0;
 
 }
 .tabla1 th{
@@ -280,7 +286,7 @@ text-decoration: none;
     font-weight: bold;
     text-align: center;
     font-family:'Vina Sans', cursive ;
-    padding: 50px 0;
+    padding: 15px 0;
 }
 .tabla2 th{
     border-collapse: collapse;
