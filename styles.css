@@ -113,8 +113,10 @@ right: 950px;
 .sobremi{
     background-color: #1e2326;
     color : #fff;
-    padding:50px 20px;
+    padding:200px 20px;
+    height: 100vh;
 }
+
 .sobremi .contenido-seccion{
     max-width: 1100px;
     margin: auto;
@@ -212,16 +214,13 @@ right: 950px;
         background:  linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
         url(img/fondo.png);
         background-size: cover;
-        height: 70vh;
+        height: 100vh;
         color: #ffff;
-       
-        /*
-        background-color: #1e2326;
-        color : #fff;*/
-        padding: 50px 20px;
+        padding: 40px 20px;
+
     }
     .curriculum .contenido-seccion{
-        max-width: 1500px;
+        max-width: 1600px;
         margin: auto;
         justify-content: space-between;
         display: flex;
@@ -232,12 +231,14 @@ right: 950px;
         padding: 180px 110px;
       position: relative;
       left: -200px;
+      top: 100px;
     }
 .tabla1{
     margin-left: 50px;
     width: 50%;  
     position: relative;
     left: -200px;
+    top: 50px;
  
 }
 
@@ -246,6 +247,7 @@ right: 950px;
     width: 50%;    
     position: relative;
     left: -200px;
+    top: 50px;
  
 }
 
@@ -305,6 +307,40 @@ right: 950px;
 }
 .tabla2 td:hover{
     background-color: #252A2E;
+}
+.curriculum .idiomas h3{
+    font-size: 30px;
+    font-family: 'Righteous';
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 40px;
+
+}
+.curriculum  .idiomas p{
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    position: relative;
+    top: 120px;
+    left: 900px;
+}
+.curriculum .otrosdatos h3{
+    font-size: 30px;
+    font-family: 'Righteous';
+    text-align: center;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+.curriculum .otrosdatos p{
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    position: relative;
+    top: 160px;
+    left: 830px;
+
 }
 /* CONTACTO */
 .contacto{
