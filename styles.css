@@ -73,7 +73,7 @@ text-decoration: none;
     display: block;
     width: 100%;
     margin: auto;
-    border-radius: 150%;
+    border-radius: 50%;
 }
 .inicio .contenido-banner h1{
     margin-top: 0px;
@@ -161,7 +161,6 @@ right: 950px;
 }
 .sobremi .fila .col .contenedor-intereses{
  display: flex;
- flex-wrap: wrap;
 }
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
@@ -315,6 +314,7 @@ right: 950px;
     text-align: center;
     margin-top: 130px;
     margin-left: 60px;
+    border: 1px solid #ffff;
 }
 .curriculum .otrosdatos h3{
     font-size: 30px;
@@ -331,6 +331,7 @@ right: 950px;
     text-align: center;
     margin-top: 50px;
     margin-left: 50px;
+    border: 1px solid #ffff;
 }
 /* CONTACTO */
 .contacto{
