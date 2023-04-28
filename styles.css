@@ -102,7 +102,12 @@ text-decoration: none;
 .inicio .contenido-banner .redes a:hover{
    background-color: #aa8d0d; 
 }
-
+.inicio .flecha{
+font-size: 80px;
+position: relative;
+top: 400px;
+right: 950px;
+}
 
 /*SOBRE MI*/
 .sobremi{
@@ -367,8 +372,8 @@ footer{
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
-    position: relative
-    width: 100%;
+    position: relative;
+    width: 100;
 }
 footer .redes{
     margin-bottom: 20px;
@@ -386,6 +391,6 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
-footer .redes a:hover{
+footer  .redes a:hover{
     background-color: #aa8d0d; 
  }
