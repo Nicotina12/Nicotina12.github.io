@@ -9,6 +9,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Nicolas Villanueva</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -23,7 +26,7 @@
                     <li><a href="#inicio">INICIO</a></li>
                     <li><a href="#sobremi">SOBRE MI</a></li>
                     <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#form">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
@@ -197,22 +200,57 @@
         </div>
     </section>
     <!--SECCION CONTACTO-->
-    <section id="contacto" class="contacto">
+    <section id="form">
+        <!--form-->
         <div class="contenido-seccion">
-            <h2>Contacto</h2>
-            <div class="fila">
-                <!--form-->
-                <div class="col">
-                    <input type="text" placeholder="Tu nombre">
-                    <input type="text" placeholder="Numero Telefonico">
-                    <input type="text" placeholder="Direccion de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        <i class="fa-solid fa-inbox"></i> Enviar Mensaje
-                        <span class="overlay"></span>
-                    </button>
+            <h2>Formulario de Contacto</h2>
+            <form id="formulario" onsubmit="enviarDatos(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre..." id="nombre" required>
                 </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Su apellido " required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                    <input type="email" id="correo" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" placeholder="Su empresa" required>
+                </div>
+                <div class="form-group">
+                    <label for="sueldo">Sueldo:</label>
+                    <input type="number" id="sueldo" min="10000" placeholder="Ingrese el monto" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" value="enviar">Enviar<span class="overlay"></span></button>
+                </div>
+            </form>
+            <h2 class="table-h2">Propuestas:</h2>
+            <div>
+                <label for="orden" >  Ordenar por:</label>
+                <select id="orden" onchange="ordenarTabla()">
+                    <option value="default">Default</option>
+                    <option value="sueldo_min">Sueldo mínimo ofrecido</option>
+                    <option value="sueldo_max">Sueldo máximo ofrecido</option>
+                </select>
+            </div>
+            <table id="resultados" class="sof-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Empresa</th>
+                        <th>Correo electrónico</th>
+                        <th colspan="4" class="text-center">Sueldo</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
     </section>
     <!--SECCION FOOTER-->
     <footer>

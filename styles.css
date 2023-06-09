@@ -381,26 +381,27 @@ html {
 }
 
 /* CONTACTO */
-.contacto {
+#form {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
 
-.contacto .contenido-seccion {
+#form .contenido-seccion {
     max-width: 1100%;
     margin: auto;
 }
 
-.contacto h2 {
+#form h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
 
-.contacto .fila {
+#form label {
     display: flex;
+    color: #fff;
 }
 
 .contacto .col {
@@ -409,8 +410,8 @@ html {
     position: static;
 }
 
-.contacto .col input,
-.contacto .col textarea {
+#form input,
+#form textarea {
     display: block;
     width: 100%;
     padding: 18px;
@@ -421,7 +422,7 @@ html {
     font-size: 18px;
 }
 
-.contacto button {
+#form button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -435,7 +436,7 @@ html {
     z-index: 10;
 }
 
-.contacto button .overlay {
+#form button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -446,10 +447,49 @@ html {
     transition: 1s;
 }
 
-.contacto button:hover .overlay {
+#form button:hover .overlay {
     width: 100%;
 }
+select {
+    appearance: none; 
+    padding: 8px; 
+    font-size: 16px; 
+    border-radius: 20px; 
+    background-color: #2a3a48; 
+    color: #fff; 
+    width: 500px;
+    text-align: center;
+  }
+  select:hover {
+    border-color: #999; /* Cambia el color del borde */
+  }
+  select:focus {
+    outline: none; 
+    border-color: #555; 
+    box-shadow: 0 0 10px rgba(255, 136, 0, 0.3);
+  }
+  select option {
+    background-color: #252A2E; 
+    color: #fff; 
+  }
+  .sof-table {
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  .sof-table th {
+    background-color: #483535; 
+    color: rgb(255, 255, 255); 
+    font-weight: bold; 
+    padding: 10px; 
+    border-bottom: 1px solid #ccc; 
+  }
+  .sof-table td {
+    font-weight: bold; 
+    font-size: 50x; 
+    padding: 10px; /* Espacio interno */
+    border-bottom: 1px solid #ccc; /* Borde inferior */
 
+}
 /*FOOTER*/
 footer {
     background-color: #252A2E;
